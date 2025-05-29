@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Black Oversized Hoodie",
+    "description": "Soft and warm oversized hoodie featuring the Eclypse logo.",
+    "price": 49.99,
+    "category": "Clothing",
+    "image": "/images/hoodie1.png",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": 2,
+    "name": "Eclipse Graphic T-Shirt",
+    "description": "Limited edition T-shirt with a solar eclipse print.",
+    "price": 29.99,
+    "category": "Clothing",
+    "image": "/images/tshirt1.png",
+    "rating": 4.2,
+    "inStock": true
+  },
+  {
+    "id": 3,
+    "name": "Nebula Joggers",
+    "description": "Comfortable joggers with a galaxy-inspired design.",
+    "price": 39.99,
+    "category": "Clothing",
+    "image": "/images/joggers1.png",
+    "rating": 4.7,
+    "inStock": false
+  },
+  {
+    "id": 4,
+    "name": "Eclipse Snapback Cap",
+    "description": "Classic black snapback with embroidered Eclypse logo.",
+    "price": 19.99,
+    "category": "Accessories",
+    "image": "/images/cap1.png",
+    "rating": 4.1,
+    "inStock": true
+  },
+  {
+    "id": 5,
+    "name": "Stellar Phone Case",
+    "description": "Protective phone case with a starry design. Fits all models.",
+    "price": 14.99,
+    "category": "Accessories",
+    "image": "/images/phonecase1.png",
+    "rating": 4.3,
+    "inStock": true
+  },
+  {
+    "id": 6,
+    "name": "Galaxy Tote Bag",
+    "description": "Reusable tote bag with a minimal eclipse graphic print.",
+    "price": 24.99,
+    "category": "Accessories",
+    "image": "/images/totebag1.png",
+    "rating": 4.6,
+    "inStock": false
+  }
+]
