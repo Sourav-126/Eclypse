@@ -1,5 +1,4 @@
-import { useNavigate } from "react-router-dom";
-import "../App.css"
+import "../App.css";
 
 export const Checkout_Button = ({
   width,
@@ -9,6 +8,7 @@ export const Checkout_Button = ({
   text,
   backgroundColor,
   color,
+  onClick,
 }: {
   width: string;
   borderColor: string;
@@ -17,11 +17,11 @@ export const Checkout_Button = ({
   text: string;
   backgroundColor: string;
   color: string;
+  onClick: () => void;
 }) => {
-  const navigate = useNavigate();
   return (
     <button
-      onClick={() => navigate("/checkout")}
+      onClick={onClick}
       style={{
         width,
         borderInlineColor: borderColor,

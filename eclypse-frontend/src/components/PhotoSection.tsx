@@ -10,8 +10,13 @@ import photo10 from "../assets/photo10.jpg";
 import photo11 from "../assets/photo11.jpg";
 import { SizeChart } from "./SizeChart";
 import { Checkout_Button } from "../utils/Checkout_Button";
+import { useNavigate } from "react-router";
 
 export const PhotosSection = () => {
+  const navigate = useNavigate();
+  const Buy_Onclick = () => {
+    navigate("/checkout");
+  };
   return (
     <div className="relative">
       <div className="absolute top-[1510px] left-[50px]">
@@ -170,6 +175,7 @@ export const PhotosSection = () => {
           </button>
           <div className="absolute top-[750px] left-[244px]">
             <Checkout_Button
+              onClick={Buy_Onclick}
               width="428px"
               borderColor="black"
               top="0px"

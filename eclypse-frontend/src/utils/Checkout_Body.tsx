@@ -2,8 +2,19 @@ import { useNavigate } from "react-router";
 import { Checkout_Button } from "./Checkout_Button";
 import { Checkout_inputBox } from "./Checkout_inputBox";
 import { Checkout_Line } from "./Checkout_Line";
-
+import axios from "axios";
 export const Checkout_Body = () => {
+  const address = async () => {
+    const message = await axios.post(
+      "https://eclypse-y4mn.onrender.com/api/address"
+    );
+    console.log(message);
+    navigate("/");
+  };
+
+  const Place_order = () => {
+    navigate("/");
+  };
   const navigate = useNavigate();
   return (
     <div className="mt-[70px] ml-[55px] relative">
@@ -97,6 +108,7 @@ export const Checkout_Body = () => {
 
           <div className="absolute bottom-[77px] left-[45px] flex gap-[28px]">
             <Checkout_Button
+              onClick={() => {}}
               width="203px"
               top="1px"
               left="-70px"
@@ -106,6 +118,7 @@ export const Checkout_Body = () => {
               color="black"
             />
             <Checkout_Button
+              onClick={address}
               width="410px"
               top="0px"
               left="231px"
@@ -204,6 +217,7 @@ export const Checkout_Body = () => {
           {/* Place Order Button */}
           <div className="absolute bottom-[77px] left-[81px]">
             <Checkout_Button
+              onClick={Place_order}
               width="410px"
               top="0px"
               left="0px"
